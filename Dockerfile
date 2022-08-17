@@ -1,6 +1,6 @@
 FROM node:alpine
 
-LABEL github=https://github.com/Sean-Bradley
+LABEL github=https://github.com/isaackehle
 
 COPY src /nodejs/src
 COPY package.json /nodejs/package.json
