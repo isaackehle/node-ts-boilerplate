@@ -1,12 +1,13 @@
 import app from "./app";
+import Logger from "./config/logger";
 
 const port = parseInt(process.env.PORT || "3000");
 
 const server = new app()
   .Start(port)
-  .then((port) => console.log(`Server running on port ${port}`))
+  .then((port) => Logger.info(`Server running on port ${port}`))
   .catch((error) => {
-    console.log(error);
+    Logger.error(error);
     process.exit(1);
   });
 
