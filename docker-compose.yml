@@ -17,4 +17,4 @@ services:
     image: service-api:1.01
     expose:
       - "3000"
-    command: npm start
+    command: yarn start
