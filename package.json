@@ -37,7 +37,8 @@
     "tsc": "tsc",
     "tscCheck": "tsc --noEmit",
     "format": "prettier --write 'src/**/*.{js,ts,json}'",
-    "clean": "rimraf dist/*"
+    "clean": "rimraf dist/*",
+    "migrate": "node-pg-migrate"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",
