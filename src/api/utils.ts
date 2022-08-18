@@ -1,27 +1,34 @@
 import { Request, Response } from "express";
 
-interface PackageFile {
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+import serverInfo from "../../package.json";
+
+interface APIVersion {
+  version: number;
+  path: string;
+}
+interface ServerInfo {
   name: string;
   description: string;
   version: string;
 }
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const packageFile: PackageFile = require("../../package.json");
+const apiVersion: APIVersion = {
+  version: 1,
+  path: "/api/v1",
+};
 
-const versions = (req: unknown, res: any) => {
-  res.json([
-    {
-      version: 1,
-      path: "/api/v1",
-    },
-  ]);
+const versions: APIVersion[] = [apiVersion];
+
+const getVersions = (req: Request, res: Response) => {
+  res.json(versions);
 };
 
 const ping = (req: Request, res: Response) => {
-  const { name, description, version } = packageFile;
+  const { name, description, version }: ServerInfo = serverInfo;
+
   const uptime = process.uptime();
   res.json({ name, description, version, uptime });
 };
 
-export { ping, versions };
+export { ping, apiVersion, getVersions };

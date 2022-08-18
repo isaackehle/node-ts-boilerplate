@@ -1,61 +1,141 @@
 import { Request, Response } from "express";
+import { Client } from "pg";
+import format from "pg-format";
 import { v4 as Uuid } from "uuid";
+import Logger from "../config/logger";
+import { pgConn } from "../config/postgres";
 import { Customer } from "../models";
 
 class CustomerApi {
-  customers = new Map<string, Customer>();
+  private TABLE = "customers";
 
-  constructor() {
-    this.customers.set(Uuid(), { name: "Obi Wan", dob: new Date("2001-01-02"), isHired: false, ssn: "123-12-3123" });
-    this.customers.set(Uuid(), { name: "Qui-Gon Jinn", dob: new Date("1985-11-05"), isHired: false, ssn: "298-29-8298" });
-  }
-
-  fetchAll = (req: Request, res: Response) => {
-    res.json({ tmp: [], customers: [...this.customers.values()] });
+  private createClient = (res: Response): Client | undefined => {
+    try {
+      const client = pgConn.getClient();
+      client.connect();
+      return client;
+    } catch (e) {
+      Logger.error(e);
+      res.status(400).send(JSON.stringify({ error: "failed getting client" }));
+    }
   };
-
-  createOne = (req: Request, res: Response) => {
+  private getId = (req: Request) => req.params.id;
+  private getCustomerFromBody = (req: Request, res: Response): Customer | null => {
     try {
       const customer: Customer = { ...req.body };
-      const uuid = Uuid();
-
-      this.customers.set(uuid, customer);
-      res.json({ uuid });
+      return customer;
     } catch (e) {
+      Logger.error(e);
       res.status(400).send(JSON.stringify({ error: "problem with posted data" }));
+    }
+
+    return null;
+  };
+
+  fetchAll = async (req: Request, res: Response) => {
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    const client = this.createClient(res)!;
+
+    try {
+      const ret = await client.query(`SELECT * from ${this.TABLE}`);
+      const customers = ret.rows;
+      res.json(customers);
+      client.end();
+    } catch (e) {
+      Logger.error(e);
     }
   };
 
-  getOne = (req: Request, res: Response) => {
-    if (this.customers.has(req.params.id)) {
-      res.json({ customer: this.customers.get(req.params.id) });
-    } else {
+  fetchOne = async (req: Request, res: Response) => {
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    const client = this.createClient(res)!;
+
+    const uuid = this.getId(req);
+
+    try {
+      const q = format("SELECT * FROM %I WHERE id = %L", this.TABLE, uuid);
+      const ret = await client.query(q);
+      res.json(ret.rows[0]);
+      client.end();
+    } catch (e) {
+      Logger.error(e);
       res.status(404).send(JSON.stringify({ error: "no such customer" }));
     }
   };
 
-  updateOne = (req: Request, res: Response) => {
-    try {
-      const uuid = req.params.id;
+  createOne = async (req: Request, res: Response) => {
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    const client = this.createClient(res)!;
 
-      if (this.customers.has(uuid)) {
-        const customer: Customer = { ...req.body };
-        this.customers.set(uuid, customer);
-        res.json({ customer: this.customers.get(uuid) });
-      } else {
-        res.status(404).send(JSON.stringify({ error: "no such customer" }));
-      }
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    const customer = this.getCustomerFromBody(req, res)!;
+    const uuid = Uuid();
+
+    // TODO: Verify parameters
+
+    const { name, dob, ssn } = customer;
+
+    try {
+      const q = format("INSERT INTO %I (name, dob, ssn) VALUES('%s', '%s', '%s')", this.TABLE, name, new Date(dob).toUTCString(), ssn);
+      const ret = await client.query(q);
+      Logger.debug({ uuid, ret });
+
+      res.json(uuid);
+      client.end();
     } catch (e) {
-      res.status(400).send(JSON.stringify({ error: "problem with posted data" }));
+      Logger.error(e);
     }
   };
 
-  deleteOne = (req: Request, res: Response) => {
-    const uuid = req.params.id;
-    if (this.customers.has(uuid)) {
-      this.customers.delete(uuid);
-      res.json({ uuid });
-    } else {
+  updateOne = async (req: Request, res: Response) => {
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    const client = this.createClient(res)!;
+
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    const customer = this.getCustomerFromBody(req, res)!;
+    const uuid = this.getId(req);
+
+    // TODO: Verify parameters
+
+    const { name, dob, ssn } = customer;
+
+    try {
+      const q = format(
+        "UPDATE %I SET name = %L, dob = %L, ssn = %L WHERE ID = %L",
+        this.TABLE,
+        name,
+        new Date(dob).toUTCString(),
+        ssn,
+        uuid
+      );
+
+      Logger.debug({ uuid, q });
+
+      const ret = await client.query(q);
+      Logger.debug({ uuid, ret });
+
+      res.json(uuid);
+      client.end();
+    } catch (e) {
+      Logger.error(e);
+      res.status(404).send(JSON.stringify({ error: "no such customer" }));
+    }
+  };
+
+  deleteOne = async (req: Request, res: Response) => {
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    const client = this.createClient(res)!;
+    const uuid = this.getId(req);
+
+    try {
+      const q = format("DELETE FROM %I WHERE id IN (%L)", this.TABLE, uuid);
+      const ret = await client.query(q);
+      const rowCount = ret.rowCount;
+
+      res.json({ uuid, rowCount });
+      client.end();
+    } catch (e) {
+      Logger.error(e);
       res.status(404).send(JSON.stringify({ error: "no such customer" }));
     }
   };

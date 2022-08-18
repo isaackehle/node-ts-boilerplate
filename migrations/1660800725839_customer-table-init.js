@@ -8,11 +8,14 @@ exports.up = (pgm) => {
     name: { type: "varchar(1000)", notNull: true },
     ssn: { type: "varchar(11)" },
     dob: { type: "timestamp", notNull: true },
-    isHired: { type: "boolean", default: false },
     createdAt: { type: "timestamp", notNull: true, default: pgm.func("current_timestamp") },
   });
+
+  // pgm.createIndex("customers", "id");
 };
 
 exports.down = () => {
   // placeholder
 };
+
+// SELECT x.* FROM public.customers x WHERE x.id IN ('b5e179be-2936-4404-b18c-fcf215b368ff'::uuid)

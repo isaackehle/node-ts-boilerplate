@@ -1,3 +1,3 @@
 import { customerApi } from "./customers";
-import { ping, versions } from "./utils";
-export { ping, versions, customerApi };
+import { apiVersion, getVersions, ping } from "./utils";
+export { ping, getVersions, apiVersion, customerApi };

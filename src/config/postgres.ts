@@ -1,30 +1,26 @@
 // https://node-postgres.com/features/connecting
 
-// import { Client, Pool } from "pg";
-// // pools will use environment variables
-// // for connection information
-// const pool = new Pool();
-// pool.query("SELECT NOW()", (err, res) => {
-//   console.log(err, res);
-//   pool.end();
-// });
+import { Client } from "pg";
+import vars from "../vars";
 
-// // you can also use async/await
-// const res = await pool.query("SELECT NOW()");
-// await pool.end();
-// // clients will also use environment variables
-// // for connection information
-// const client = new Client();
-// await client.connect();
-// const res = await client.query("SELECT NOW()");
-// await client.end();
+// pools will use environment variables for connection information
+class PostgresConn {
+  // private pool: Pool;
 
-/*
-PGUSER=dbuser \
-  PGHOST=database.server.com \
-  PGPASSWORD=secretpassword \
-  PGDATABASE=mydb \
-  PGPORT=3211 \
-  node script.js
+  constructor(
+    private user: string,
+    private password: string | undefined,
+    private host: string,
+    private port = 5432,
+    private database = "test"
+  ) {
+    // Logger.debug({ user, host, database, password, port });
+    // this.pool = new Pool({ user, host, database, password, port });
+  }
 
-*/
+  // getPool = () => this.pool;
+  getClient = () => new Client({ user: this.user, host: this.host, database: this.database, password: this.password, port: this.port });
+}
+
+const { username, host, db, password, port } = vars.postgres;
+export const pgConn = new PostgresConn(username, password, host, port, db);

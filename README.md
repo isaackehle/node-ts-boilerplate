@@ -9,6 +9,7 @@ Thanks in part to:
 - [Express ES2017 REST API Boilerplate](https://github.dev/danielfsousa/express-rest-boilerplate)
 - [Node Postgres](https://node-postgres.com/)
 - [Postgres migrate](https://www.npmjs.com/package/node-pg-migrate)
+- [Postgres migrate](https://salsita.github.io/node-pg-migrate)
 
 ## Pick a DB
 
@@ -28,6 +29,8 @@ Now you should put your DB connection string to DATABASE_URL environment variabl
 ```bash
 psql postgres
 
+\c boilerplate
+
 CREATE DATABASE boilerplate;
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 ```
@@ -42,3 +45,11 @@ From [here](https://salsita.github.io/node-pg-migrate/#/)
 ```bash
 yarn run migrate create customer table init
 ```
+
+## Things to do
+
+- move migrations to .ts, and use data models
+- tie data models to swagger defs
+- add auth for customers
+- password table for customers
+- [swagger-jsdoc](https://www.npmjs.com/package/swagger-jsdoc)
