@@ -35,3 +35,10 @@ CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 ```bash
 DATABASE_URL=postgres://`{whoami}`:test@localhost:5432/boilerplate yarn run migrate up
 ```
+
+Create a new migration.
+From [here](https://salsita.github.io/node-pg-migrate/#/)
+
+```bash
+yarn run migrate create customer table init
+```
