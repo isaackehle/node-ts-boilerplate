@@ -53,3 +53,5 @@ yarn run migrate create customer table init
 - add auth for customers
 - password table for customers
 - [swagger-jsdoc](https://www.npmjs.com/package/swagger-jsdoc)
+- add abstract class for types, for loading to data store
+- map pg functions to Contractor/Customer classes
