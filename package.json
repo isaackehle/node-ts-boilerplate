@@ -75,7 +75,7 @@
     "node-pg-migrate": "^6.2.2",
     "passport-http-bearer": "^1.0.1",
     "passport-jwt": "^4.0.0",
-    "pg": "^8.7.3",
+    "pg": "^8.8.0",
     "pg-format": "^1.0.4",
     "swagger-jsdoc": "^6.2.5",
     "swagger-ui-express": "^4.5.0",
