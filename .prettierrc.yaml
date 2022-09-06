@@ -1,11 +1,16 @@
 ---
 semi: true
-trailingComma: "all"
+trailingComma: 'all'
 singleQuote: true
 printWidth: 140
 tabWidth: 2
-
-  - files: "*.ts"
+overrides:
+  - files: '*.ts,*.js'
+    options:
+      semi: true
+      printWidth: 140
+      tabWidth: 2
+  - files: '*.json'
     options:
       semi: true
       printWidth: 140
