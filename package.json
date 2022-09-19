@@ -66,7 +66,6 @@
   },
   "dependencies": {
     "@types/node": "^18.7.16",
-    "@types/winston": "^2.4.4",
     "body-parser": "^1.20.0",
     "cors": "^2.8.5",
     "csv": "^6.2.0",
