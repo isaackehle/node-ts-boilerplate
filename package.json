@@ -65,7 +65,7 @@
     }
   },
   "dependencies": {
-    "@types/node": "^18.7.16",
+    "@types/node": "^18.7.18",
     "@types/winston": "^2.4.4",
     "body-parser": "^1.20.0",
     "cors": "^2.8.5",
