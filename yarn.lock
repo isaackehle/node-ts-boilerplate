@@ -703,24 +703,24 @@ csv-generate@^4.2.1:
   resolved "https://registry.yarnpkg.com/csv-generate/-/csv-generate-4.2.1.tgz#2a0c5f0d9a5b6f7a0c1fee40f028707af048b31b"
   integrity sha512-w6GFHjvApv6bcJ2xdi9JGsH6ZvUBfC+vUdfefnEzurXG6hMRwzkBLnhztU2H7v7+zfCk1I/knnQ+tGbgpxWrBw==
 
-csv-parse@^5.3.2:
-  version "5.3.2"
-  resolved "https://registry.yarnpkg.com/csv-parse/-/csv-parse-5.3.2.tgz#a8ce2f8dec1b9c1013c9e73c6102fe0d2d436dbb"
-  integrity sha512-3jQ/JMs+voKxr4vwpmElS1d37J0o6rQdQyEKoPyA9HG8fYczpLaBJnmp5ykvkXL8ZeEGVP0qwLU645BZVykXKw==
+csv-parse@^5.3.3:
+  version "5.3.3"
+  resolved "https://registry.yarnpkg.com/csv-parse/-/csv-parse-5.3.3.tgz#3b75d2279e2edb550cbc54c65b25cbbf3d0033ad"
+  integrity sha512-kEWkAPleNEdhFNkHQpFHu9RYPogsFj3dx6bCxL847fsiLgidzWg0z/O0B1kVWMJUc5ky64zGp18LX2T3DQrOfw==
 
-csv-stringify@^6.2.2:
-  version "6.2.2"
-  resolved "https://registry.yarnpkg.com/csv-stringify/-/csv-stringify-6.2.2.tgz#3f398c79e14353f799c9d2583bafa06ebe68ac21"
-  integrity sha512-spGNdHxkAgoKk9ChAIR/k8JSFmvAyUQvODPUss5Djqgm/wBuU9qBRuGZ04LTAsGGnClQ8hD4TFz+hbBf1gpTMg==
-
-csv@^6.2.3:
+csv-stringify@^6.2.3:
   version "6.2.3"
-  resolved "https://registry.yarnpkg.com/csv/-/csv-6.2.3.tgz#4d78de93fc5a3ff4a93dc752c1cc2af781991905"
-  integrity sha512-LwpMgclTH2T386Ug/QgpJGtvWdQrg7ARO2BoYkevQ4H/zhiRCaDol4W2RyGoCSj+yKTeIf866mUnQAnmH0KhHA==
+  resolved "https://registry.yarnpkg.com/csv-stringify/-/csv-stringify-6.2.3.tgz#fefd25e66fd48f8f42f43b85a66a4663a2c3e796"
+  integrity sha512-4qGjUMwnlaRc00gc2jrIYh2w/h1fo25B0mTuY9K8fBiIgtmCX3LcgUbrEGViL98Ci4Se/F5LFEtu8k+dItJVZQ==
+
+csv@^6.2.5:
+  version "6.2.5"
+  resolved "https://registry.yarnpkg.com/csv/-/csv-6.2.5.tgz#e01fd3db2f0856a120ae9140bd179c1a186ee2b9"
+  integrity sha512-T+K0H7MIrlrnP6KxYKo3lK+uLl6OC2Gmwdd81TG/VdkhKvpatl35sR7tyRSpDLGl22y2T+q9KvNHnVtn4OAscQ==
   dependencies:
     csv-generate "^4.2.1"
-    csv-parse "^5.3.2"
-    csv-stringify "^6.2.2"
+    csv-parse "^5.3.3"
+    csv-stringify "^6.2.3"
     stream-transform "^3.2.1"
 
 debug@2.6.9:
