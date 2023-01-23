@@ -76,7 +76,7 @@
     "passport-jwt": "^4.0.1",
     "pg": "^8.8.0",
     "pg-format": "^1.0.4",
-    "swagger-jsdoc": "^6.2.7",
+    "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^4.6.0",
     "uuid": "^9.0.0"
   },
