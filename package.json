@@ -44,7 +44,7 @@
   "devDependencies": {
     "@types/cors": "^2.8.13",
     "@types/dotenv-safe": "^8.1.2",
-    "@types/express": "^4.17.15",
+    "@types/express": "^4.17.16",
     "@types/node": "^18.11.18",
     "@types/passport-http-bearer": "^1.0.37",
     "@types/passport-jwt": "^3.0.8",
