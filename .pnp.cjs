@@ -51,7 +51,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["passport-jwt", "npm:4.0.1"],\
             ["pg", "virtual:6bc4a91b372405d03ab2d23b5bc3f253b78964c4e4281d10dce2991fdaf6fbdb4dde546f4f2693541b3cf1d9901aa208d6d89f846d235560a844b490b2d5465e#npm:8.10.0"],\
             ["pg-format", "npm:1.0.4"],\
-            ["prettier", "npm:2.8.7"],\
+            ["prettier", "npm:2.8.8"],\
             ["rimraf", "npm:4.4.1"],\
             ["swagger-jsdoc", "npm:6.2.8"],\
             ["swagger-ui-express", "virtual:6bc4a91b372405d03ab2d23b5bc3f253b78964c4e4281d10dce2991fdaf6fbdb4dde546f4f2693541b3cf1d9901aa208d6d89f846d235560a844b490b2d5465e#npm:4.6.2"],\
@@ -3067,7 +3067,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["passport-jwt", "npm:4.0.1"],\
             ["pg", "virtual:6bc4a91b372405d03ab2d23b5bc3f253b78964c4e4281d10dce2991fdaf6fbdb4dde546f4f2693541b3cf1d9901aa208d6d89f846d235560a844b490b2d5465e#npm:8.10.0"],\
             ["pg-format", "npm:1.0.4"],\
-            ["prettier", "npm:2.8.7"],\
+            ["prettier", "npm:2.8.8"],\
             ["rimraf", "npm:4.4.1"],\
             ["swagger-jsdoc", "npm:6.2.8"],\
             ["swagger-ui-express", "virtual:6bc4a91b372405d03ab2d23b5bc3f253b78964c4e4281d10dce2991fdaf6fbdb4dde546f4f2693541b3cf1d9901aa208d6d89f846d235560a844b490b2d5465e#npm:4.6.2"],\
@@ -3483,10 +3483,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["prettier", [\
-        ["npm:2.8.7", {\
-          "packageLocation": "./.yarn/cache/prettier-npm-2.8.7-1962ac9483-fdc8f2616f.zip/node_modules/prettier/",\
+        ["npm:2.8.8", {\
+          "packageLocation": "./.yarn/cache/prettier-npm-2.8.8-430828a36c-b49e409431.zip/node_modules/prettier/",\
           "packageDependencies": [\
-            ["prettier", "npm:2.8.7"]\
+            ["prettier", "npm:2.8.8"]\
           ],\
           "linkType": "HARD"\
         }]\
