@@ -49,7 +49,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["node-pg-migrate", "virtual:6bc4a91b372405d03ab2d23b5bc3f253b78964c4e4281d10dce2991fdaf6fbdb4dde546f4f2693541b3cf1d9901aa208d6d89f846d235560a844b490b2d5465e#npm:6.2.2"],\
             ["passport-http-bearer", "npm:1.0.1"],\
             ["passport-jwt", "npm:4.0.1"],\
-            ["pg", "virtual:6bc4a91b372405d03ab2d23b5bc3f253b78964c4e4281d10dce2991fdaf6fbdb4dde546f4f2693541b3cf1d9901aa208d6d89f846d235560a844b490b2d5465e#npm:8.10.0"],\
+            ["pg", "virtual:6bc4a91b372405d03ab2d23b5bc3f253b78964c4e4281d10dce2991fdaf6fbdb4dde546f4f2693541b3cf1d9901aa208d6d89f846d235560a844b490b2d5465e#npm:8.11.0"],\
             ["pg-format", "npm:1.0.4"],\
             ["prettier", "npm:2.8.8"],\
             ["rimraf", "npm:5.0.0"],\
@@ -3079,7 +3079,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/pg", "npm:8.6.5"],\
             ["decamelize", "npm:5.0.1"],\
             ["mkdirp", "npm:1.0.4"],\
-            ["pg", "virtual:6bc4a91b372405d03ab2d23b5bc3f253b78964c4e4281d10dce2991fdaf6fbdb4dde546f4f2693541b3cf1d9901aa208d6d89f846d235560a844b490b2d5465e#npm:8.10.0"],\
+            ["pg", "virtual:6bc4a91b372405d03ab2d23b5bc3f253b78964c4e4281d10dce2991fdaf6fbdb4dde546f4f2693541b3cf1d9901aa208d6d89f846d235560a844b490b2d5465e#npm:8.11.0"],\
             ["yargs", "npm:17.3.1"]\
           ],\
           "packagePeers": [\
@@ -3114,7 +3114,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["node-pg-migrate", "virtual:6bc4a91b372405d03ab2d23b5bc3f253b78964c4e4281d10dce2991fdaf6fbdb4dde546f4f2693541b3cf1d9901aa208d6d89f846d235560a844b490b2d5465e#npm:6.2.2"],\
             ["passport-http-bearer", "npm:1.0.1"],\
             ["passport-jwt", "npm:4.0.1"],\
-            ["pg", "virtual:6bc4a91b372405d03ab2d23b5bc3f253b78964c4e4281d10dce2991fdaf6fbdb4dde546f4f2693541b3cf1d9901aa208d6d89f846d235560a844b490b2d5465e#npm:8.10.0"],\
+            ["pg", "virtual:6bc4a91b372405d03ab2d23b5bc3f253b78964c4e4281d10dce2991fdaf6fbdb4dde546f4f2693541b3cf1d9901aa208d6d89f846d235560a844b490b2d5465e#npm:8.11.0"],\
             ["pg-format", "npm:1.0.4"],\
             ["prettier", "npm:2.8.8"],\
             ["rimraf", "npm:5.0.0"],\
@@ -3366,23 +3366,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["pg", [\
-        ["npm:8.10.0", {\
-          "packageLocation": "./.yarn/cache/pg-npm-8.10.0-aaf80ae55e-c6be78f2e8.zip/node_modules/pg/",\
+        ["npm:8.11.0", {\
+          "packageLocation": "./.yarn/cache/pg-npm-8.11.0-dc89b86345-30448ab90f.zip/node_modules/pg/",\
           "packageDependencies": [\
-            ["pg", "npm:8.10.0"]\
+            ["pg", "npm:8.11.0"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:6bc4a91b372405d03ab2d23b5bc3f253b78964c4e4281d10dce2991fdaf6fbdb4dde546f4f2693541b3cf1d9901aa208d6d89f846d235560a844b490b2d5465e#npm:8.10.0", {\
-          "packageLocation": "./.yarn/__virtual__/pg-virtual-1bfad4331b/0/cache/pg-npm-8.10.0-aaf80ae55e-c6be78f2e8.zip/node_modules/pg/",\
+        ["virtual:6bc4a91b372405d03ab2d23b5bc3f253b78964c4e4281d10dce2991fdaf6fbdb4dde546f4f2693541b3cf1d9901aa208d6d89f846d235560a844b490b2d5465e#npm:8.11.0", {\
+          "packageLocation": "./.yarn/__virtual__/pg-virtual-6ce0bc3211/0/cache/pg-npm-8.11.0-dc89b86345-30448ab90f.zip/node_modules/pg/",\
           "packageDependencies": [\
-            ["pg", "virtual:6bc4a91b372405d03ab2d23b5bc3f253b78964c4e4281d10dce2991fdaf6fbdb4dde546f4f2693541b3cf1d9901aa208d6d89f846d235560a844b490b2d5465e#npm:8.10.0"],\
+            ["pg", "virtual:6bc4a91b372405d03ab2d23b5bc3f253b78964c4e4281d10dce2991fdaf6fbdb4dde546f4f2693541b3cf1d9901aa208d6d89f846d235560a844b490b2d5465e#npm:8.11.0"],\
             ["@types/pg-native", null],\
             ["buffer-writer", "npm:2.0.0"],\
             ["packet-reader", "npm:1.0.0"],\
-            ["pg-connection-string", "npm:2.5.0"],\
+            ["pg-cloudflare", "npm:1.1.0"],\
+            ["pg-connection-string", "npm:2.6.0"],\
             ["pg-native", null],\
-            ["pg-pool", "virtual:1bfad4331bf355727a9a78e4ee8db0688b61e301c6d61725d929a7541cbc6206944d536155b2c6b1500772953971b4c40c3b0290a961914f3270613ad63cb792#npm:3.6.0"],\
+            ["pg-pool", "virtual:6ce0bc32110c1a590c9b16f857bbc02e04fd5d58b6d7946b3a329087451598c570d0cdb4daca68e4dac6de6495aa40e680fd78c7cce7c736722b680ee504c0e3#npm:3.6.0"],\
             ["pg-protocol", "npm:1.6.0"],\
             ["pg-types", "npm:2.2.0"],\
             ["pgpass", "npm:1.0.5"]\
@@ -3394,11 +3395,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["pg-connection-string", [\
-        ["npm:2.5.0", {\
-          "packageLocation": "./.yarn/cache/pg-connection-string-npm-2.5.0-1ee5de9ab9-a6f3a068f7.zip/node_modules/pg-connection-string/",\
+      ["pg-cloudflare", [\
+        ["npm:1.1.0", {\
+          "packageLocation": "./.yarn/cache/pg-cloudflare-npm-1.1.0-6fd7b8ce0e-fca32af487.zip/node_modules/pg-cloudflare/",\
           "packageDependencies": [\
-            ["pg-connection-string", "npm:2.5.0"]\
+            ["pg-cloudflare", "npm:1.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["pg-connection-string", [\
+        ["npm:2.6.0", {\
+          "packageLocation": "./.yarn/cache/pg-connection-string-npm-2.6.0-713346faff-0262452638.zip/node_modules/pg-connection-string/",\
+          "packageDependencies": [\
+            ["pg-connection-string", "npm:2.6.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3429,12 +3439,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:1bfad4331bf355727a9a78e4ee8db0688b61e301c6d61725d929a7541cbc6206944d536155b2c6b1500772953971b4c40c3b0290a961914f3270613ad63cb792#npm:3.6.0", {\
-          "packageLocation": "./.yarn/__virtual__/pg-pool-virtual-856efe656c/0/cache/pg-pool-npm-3.6.0-68525d632a-f3fe050fbf.zip/node_modules/pg-pool/",\
+        ["virtual:6ce0bc32110c1a590c9b16f857bbc02e04fd5d58b6d7946b3a329087451598c570d0cdb4daca68e4dac6de6495aa40e680fd78c7cce7c736722b680ee504c0e3#npm:3.6.0", {\
+          "packageLocation": "./.yarn/__virtual__/pg-pool-virtual-43bfe8253b/0/cache/pg-pool-npm-3.6.0-68525d632a-f3fe050fbf.zip/node_modules/pg-pool/",\
           "packageDependencies": [\
-            ["pg-pool", "virtual:1bfad4331bf355727a9a78e4ee8db0688b61e301c6d61725d929a7541cbc6206944d536155b2c6b1500772953971b4c40c3b0290a961914f3270613ad63cb792#npm:3.6.0"],\
+            ["pg-pool", "virtual:6ce0bc32110c1a590c9b16f857bbc02e04fd5d58b6d7946b3a329087451598c570d0cdb4daca68e4dac6de6495aa40e680fd78c7cce7c736722b680ee504c0e3#npm:3.6.0"],\
             ["@types/pg", null],\
-            ["pg", "virtual:6bc4a91b372405d03ab2d23b5bc3f253b78964c4e4281d10dce2991fdaf6fbdb4dde546f4f2693541b3cf1d9901aa208d6d89f846d235560a844b490b2d5465e#npm:8.10.0"]\
+            ["pg", "virtual:6bc4a91b372405d03ab2d23b5bc3f253b78964c4e4281d10dce2991fdaf6fbdb4dde546f4f2693541b3cf1d9901aa208d6d89f846d235560a844b490b2d5465e#npm:8.11.0"]\
           ],\
           "packagePeers": [\
             "@types/pg",\
