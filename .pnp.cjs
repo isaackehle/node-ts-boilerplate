@@ -36,7 +36,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/passport-jwt", "npm:3.0.8"],\
             ["@types/pg-format", "npm:1.0.2"],\
             ["@types/swagger-ui-express", "npm:4.1.3"],\
-            ["@types/uuid", "npm:9.0.1"],\
+            ["@types/uuid", "npm:9.0.2"],\
             ["@typescript-eslint/eslint-plugin", "virtual:6bc4a91b372405d03ab2d23b5bc3f253b78964c4e4281d10dce2991fdaf6fbdb4dde546f4f2693541b3cf1d9901aa208d6d89f846d235560a844b490b2d5465e#npm:5.59.1"],\
             ["@typescript-eslint/parser", "virtual:6bc4a91b372405d03ab2d23b5bc3f253b78964c4e4281d10dce2991fdaf6fbdb4dde546f4f2693541b3cf1d9901aa208d6d89f846d235560a844b490b2d5465e#npm:5.59.1"],\
             ["body-parser", "npm:1.20.2"],\
@@ -704,10 +704,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@types/uuid", [\
-        ["npm:9.0.1", {\
-          "packageLocation": "./.yarn/cache/@types-uuid-npm-9.0.1-b44e45eb8a-c472b8a77c.zip/node_modules/@types/uuid/",\
+        ["npm:9.0.2", {\
+          "packageLocation": "./.yarn/cache/@types-uuid-npm-9.0.2-f2a5f65979-1754bcf344.zip/node_modules/@types/uuid/",\
           "packageDependencies": [\
-            ["@types/uuid", "npm:9.0.1"]\
+            ["@types/uuid", "npm:9.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3101,7 +3101,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/passport-jwt", "npm:3.0.8"],\
             ["@types/pg-format", "npm:1.0.2"],\
             ["@types/swagger-ui-express", "npm:4.1.3"],\
-            ["@types/uuid", "npm:9.0.1"],\
+            ["@types/uuid", "npm:9.0.2"],\
             ["@typescript-eslint/eslint-plugin", "virtual:6bc4a91b372405d03ab2d23b5bc3f253b78964c4e4281d10dce2991fdaf6fbdb4dde546f4f2693541b3cf1d9901aa208d6d89f846d235560a844b490b2d5465e#npm:5.59.1"],\
             ["@typescript-eslint/parser", "virtual:6bc4a91b372405d03ab2d23b5bc3f253b78964c4e4281d10dce2991fdaf6fbdb4dde546f4f2693541b3cf1d9901aa208d6d89f846d235560a844b490b2d5465e#npm:5.59.1"],\
             ["body-parser", "npm:1.20.2"],\
