@@ -54,7 +54,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.8.8"],\
             ["rimraf", "npm:5.0.0"],\
             ["swagger-jsdoc", "npm:6.2.8"],\
-            ["swagger-ui-express", "virtual:6bc4a91b372405d03ab2d23b5bc3f253b78964c4e4281d10dce2991fdaf6fbdb4dde546f4f2693541b3cf1d9901aa208d6d89f846d235560a844b490b2d5465e#npm:4.6.2"],\
+            ["swagger-ui-express", "virtual:6bc4a91b372405d03ab2d23b5bc3f253b78964c4e4281d10dce2991fdaf6fbdb4dde546f4f2693541b3cf1d9901aa208d6d89f846d235560a844b490b2d5465e#npm:5.0.0"],\
             ["ts-node-dev", "virtual:6bc4a91b372405d03ab2d23b5bc3f253b78964c4e4281d10dce2991fdaf6fbdb4dde546f4f2693541b3cf1d9901aa208d6d89f846d235560a844b490b2d5465e#npm:2.0.0"],\
             ["typescript", "patch:typescript@npm%3A5.0.4#~builtin<compat/typescript>::version=5.0.4&hash=85af82"],\
             ["uuid", "npm:9.0.0"]\
@@ -3119,7 +3119,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.8.8"],\
             ["rimraf", "npm:5.0.0"],\
             ["swagger-jsdoc", "npm:6.2.8"],\
-            ["swagger-ui-express", "virtual:6bc4a91b372405d03ab2d23b5bc3f253b78964c4e4281d10dce2991fdaf6fbdb4dde546f4f2693541b3cf1d9901aa208d6d89f846d235560a844b490b2d5465e#npm:4.6.2"],\
+            ["swagger-ui-express", "virtual:6bc4a91b372405d03ab2d23b5bc3f253b78964c4e4281d10dce2991fdaf6fbdb4dde546f4f2693541b3cf1d9901aa208d6d89f846d235560a844b490b2d5465e#npm:5.0.0"],\
             ["ts-node-dev", "virtual:6bc4a91b372405d03ab2d23b5bc3f253b78964c4e4281d10dce2991fdaf6fbdb4dde546f4f2693541b3cf1d9901aa208d6d89f846d235560a844b490b2d5465e#npm:2.0.0"],\
             ["typescript", "patch:typescript@npm%3A5.0.4#~builtin<compat/typescript>::version=5.0.4&hash=85af82"],\
             ["uuid", "npm:9.0.0"]\
@@ -4079,29 +4079,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["swagger-ui-dist", [\
-        ["npm:4.14.0", {\
-          "packageLocation": "./.yarn/cache/swagger-ui-dist-npm-4.14.0-bc2f719c83-8670e230ae.zip/node_modules/swagger-ui-dist/",\
+        ["npm:5.1.0", {\
+          "packageLocation": "./.yarn/cache/swagger-ui-dist-npm-5.1.0-2571f16bc3-41b91708e7.zip/node_modules/swagger-ui-dist/",\
           "packageDependencies": [\
-            ["swagger-ui-dist", "npm:4.14.0"]\
+            ["swagger-ui-dist", "npm:5.1.0"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["swagger-ui-express", [\
-        ["npm:4.6.2", {\
-          "packageLocation": "./.yarn/cache/swagger-ui-express-npm-4.6.2-d5646138c6-3883dc9243.zip/node_modules/swagger-ui-express/",\
+        ["npm:5.0.0", {\
+          "packageLocation": "./.yarn/cache/swagger-ui-express-npm-5.0.0-9e2b84aeec-565b897173.zip/node_modules/swagger-ui-express/",\
           "packageDependencies": [\
-            ["swagger-ui-express", "npm:4.6.2"]\
+            ["swagger-ui-express", "npm:5.0.0"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:6bc4a91b372405d03ab2d23b5bc3f253b78964c4e4281d10dce2991fdaf6fbdb4dde546f4f2693541b3cf1d9901aa208d6d89f846d235560a844b490b2d5465e#npm:4.6.2", {\
-          "packageLocation": "./.yarn/__virtual__/swagger-ui-express-virtual-ca72c95de5/0/cache/swagger-ui-express-npm-4.6.2-d5646138c6-3883dc9243.zip/node_modules/swagger-ui-express/",\
+        ["virtual:6bc4a91b372405d03ab2d23b5bc3f253b78964c4e4281d10dce2991fdaf6fbdb4dde546f4f2693541b3cf1d9901aa208d6d89f846d235560a844b490b2d5465e#npm:5.0.0", {\
+          "packageLocation": "./.yarn/__virtual__/swagger-ui-express-virtual-f32c1fd2b1/0/cache/swagger-ui-express-npm-5.0.0-9e2b84aeec-565b897173.zip/node_modules/swagger-ui-express/",\
           "packageDependencies": [\
-            ["swagger-ui-express", "virtual:6bc4a91b372405d03ab2d23b5bc3f253b78964c4e4281d10dce2991fdaf6fbdb4dde546f4f2693541b3cf1d9901aa208d6d89f846d235560a844b490b2d5465e#npm:4.6.2"],\
+            ["swagger-ui-express", "virtual:6bc4a91b372405d03ab2d23b5bc3f253b78964c4e4281d10dce2991fdaf6fbdb4dde546f4f2693541b3cf1d9901aa208d6d89f846d235560a844b490b2d5465e#npm:5.0.0"],\
             ["@types/express", "npm:4.17.17"],\
             ["express", "npm:4.18.2"],\
-            ["swagger-ui-dist", "npm:4.14.0"]\
+            ["swagger-ui-dist", "npm:5.1.0"]\
           ],\
           "packagePeers": [\
             "@types/express",\
