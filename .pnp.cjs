@@ -31,7 +31,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/cors", "npm:2.8.13"],\
             ["@types/dotenv-safe", "npm:8.1.2"],\
             ["@types/express", "npm:4.17.17"],\
-            ["@types/node", "npm:18.16.3"],\
+            ["@types/node", "npm:20.4.4"],\
             ["@types/passport-http-bearer", "npm:1.0.37"],\
             ["@types/passport-jwt", "npm:3.0.8"],\
             ["@types/pg-format", "npm:1.0.2"],\
@@ -562,10 +562,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:18.16.3", {\
-          "packageLocation": "./.yarn/cache/@types-node-npm-18.16.3-4036a5f5f3-816b39d45b.zip/node_modules/@types/node/",\
+        ["npm:20.4.4", {\
+          "packageLocation": "./.yarn/cache/@types-node-npm-20.4.4-6c302e7a15-43f3c4a8ac.zip/node_modules/@types/node/",\
           "packageDependencies": [\
-            ["@types/node", "npm:18.16.3"]\
+            ["@types/node", "npm:20.4.4"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3096,7 +3096,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/cors", "npm:2.8.13"],\
             ["@types/dotenv-safe", "npm:8.1.2"],\
             ["@types/express", "npm:4.17.17"],\
-            ["@types/node", "npm:18.16.3"],\
+            ["@types/node", "npm:20.4.4"],\
             ["@types/passport-http-bearer", "npm:1.0.37"],\
             ["@types/passport-jwt", "npm:3.0.8"],\
             ["@types/pg-format", "npm:1.0.2"],\
